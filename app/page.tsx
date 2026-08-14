@@ -9,7 +9,7 @@ import {
   analyzeFunction,
   strategyDB,
   type FunctionType,
-} from '@/data/strategies'
+} from '../data/strategies'
 
 type Step = 1 | 2 | 3 | 4 | 5
 
