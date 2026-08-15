@@ -1,10 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  basePath: '/dog-behavior-analyzer',
+  basePath: process.env.GITHUB_PAGES === 'true' ? '/dog-behavior-analyzer' : '',
   images: {
     unoptimized: true,
   },
 }
 
-export default nextConfig
+module.exports = nextConfig
