@@ -2,9 +2,8 @@ import type { Config } from 'tailwindcss'
 
 const config: Config = {
   content: [
-    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+    './app/**/*.{js,ts,jsx,tsx,mdx}',
+    './components/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
     extend: {
@@ -22,9 +21,6 @@ const config: Config = {
           border: '#EDE4D9',
         }
       },
-      fontFamily: {
-        sans: ['system-ui', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
-      }
     },
   },
   plugins: [],
