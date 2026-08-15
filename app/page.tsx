@@ -68,16 +68,10 @@ export default function Home() {
         </div>
 
         {/* 步驟指示器 */}
-        <div className="flex gap-2 px-5 py-4">
-          {[1, 2, 3, 4].map((s) => (
-            <div
-              key={s}
-              className={`flex-1 h-1 rounded-full transition-colors ${
-                s <= step ? 'bg-paw-orange' : 'bg-gray-200'
-              }`}
-            />
-          ))}
-        </div>
+import StepIndicator from '@/components/StepIndicator'
+
+// ... 在 JSX 裡：
+<StepIndicator currentStep={step} />
 
         {/* ====== 步驟 1: 問題選擇 ====== */}
         {step === 1 && (
